@@ -30,7 +30,7 @@ return require('packer').startup(function()
 	}
 	use{
   		'nvim-telescope/telescope.nvim',
- 		requires = { {'nvim-lua/plenary.nvim'} }
+ 		  requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use{
 		'mhinz/vim-signify'
@@ -49,5 +49,11 @@ return require('packer').startup(function()
 	}
 	use{
 		'sheerun/vim-polyglot'
+	}
+	use{
+    'mattn/emmet-vim'
+	}
+	use{
+    'neoclide/coc.nvim', branch = 'release'
 	}
 end)

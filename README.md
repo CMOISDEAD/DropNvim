@@ -26,4 +26,3 @@ Still in development ❤️
 - Vim-Multiple-Cursors
 
 And more ... ❤️👨‍💻🔥
-a

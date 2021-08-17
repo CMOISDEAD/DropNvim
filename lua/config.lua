@@ -80,7 +80,13 @@ require("indent_blankline").setup {
     char = "|",
     buftype_exclude = {"terminal"}
 }
-
 g('indent_blankline_filetype_exclude', '{"dashboard", "startify"}')
 g('dashboard_default_executive', 'telescope')
+
 --===Dashboard===
+-- Todo
+--===Emmet===
+g('user_emmet_leader_key', '<C-Z>')
+
+--===CoC===
+require('coc')
