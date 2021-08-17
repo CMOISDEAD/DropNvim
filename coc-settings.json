@@ -1,0 +1,4 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["html", "javascript", "css", "javascriptreact", "markdown"],
+  "languageserver": {}
+}

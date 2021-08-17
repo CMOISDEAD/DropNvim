@@ -54,3 +54,7 @@ map('n', '<leader>cn', ':DashboardNewFile<CR>', { noremap = true, silent = true}
 --===Sessions===
 map('n', '<leader>ss', ':<C-u>SessionSave<CR>', { noremap = true, silent = true})
 map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', { noremap = true, silent = true})
+
+--===Format===
+map('n', '<leader>cf', '<Plug>(coc-format-selected)', { noremap = true, silent = true })
+map('v', '<leader>cf', '<Plug>(coc-format-selected)', { noremap = true, silent = true })

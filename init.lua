@@ -10,7 +10,7 @@ local bo = vim.bo
 o.ruler = true
 o.number = true
 o.showcmd = true
-bo.shiftwidth = 2
+o.shiftwidth = 1
 o.termguicolors = true
 o.relativenumber = true
 vim.cmd[[colorscheme gruvbox]]
@@ -19,3 +19,8 @@ vim.cmd[[colorscheme gruvbox]]
 local g = vim.api.nvim_set_var
 
 g('gruvbox_contrast_dark','hard')
+
+--Prettier
+vim.cmd([[
+  command! -nargs=0 Prettier :CocCommand prettier.formatFile
+]])
