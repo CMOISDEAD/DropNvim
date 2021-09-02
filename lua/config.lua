@@ -1,12 +1,13 @@
-local g = vim.api.nvim_set_var 
+local g = vim.api.nvim_set_var
 local cmd = vim.api.nvim_exec
+
 --===LuaLine===
 require('lualine').setup{
   options = {
     icons_enabled = true,
-    theme = 'gruvbox',
-    component_separators = {'', ''},
-    section_separators = {'', ''},
+    theme = 'nord',
+    component_separators = {'|', '|'},
+    section_separators = {'', ''},
     disabled_filetypes = {}
   },
   sections = {
@@ -30,9 +31,15 @@ require('lualine').setup{
 }
 
 --===BufferLine===
-require("bufferline").setup{}
+require("bufferline").setup{
+  --[[ options={
+    separator_style = "slant",
+  } ]]
+}
 
 --===NvimTreeLua===
+g('nvim_tree_side', 'right')
+g('nvim_tree_width', 40)
 g('nvim_tree_auto_open', 1)
 g('nvim_tree_quit_on_open', 1)
 g('nvim_tree_disable_default_keybindings', 1)
@@ -90,3 +97,23 @@ g('user_emmet_leader_key', '<C-Z>')
 
 --===CoC===
 require('coc')
+
+--===Colorizer===
+-- require'colorizer'.setup()
+
+--===Neoscroll===
+require('neoscroll').setup({
+    -- All these keys will be mapped to their corresponding default scrolling animation
+    mappings = {'<C-u>', '<C-d>', '<C-b>', '<C-f>',
+                '<C-y>', '<C-e>', 'zt', 'zz', 'zb'},
+    hide_cursor = true,          -- Hide cursor while scrolling
+    stop_eof = true,             -- Stop at <EOF> when scrolling downwards
+    use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
+    respect_scrolloff = false,   -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+    cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+    easing_function = nil,        -- Default easing function
+    pre_hook = nil,              -- Function to run before the scrolling animation starts
+    post_hook = nil,              -- Function to run after the scrolling animation ends
+})
+
+--===ToggleTerm===

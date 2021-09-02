@@ -19,6 +19,12 @@ return require('packer').startup(function()
 	use {
 		'morhetz/gruvbox'
 	}
+	use{
+		'arcticicestudio/nord-vim'
+	}
+	use {
+		'sainnhe/everforest'
+	}
 	use {
 		'lukas-reineke/indent-blankline.nvim'
 	}
@@ -45,15 +51,24 @@ return require('packer').startup(function()
 		'alvan/vim-closetag'
 	}
 	use{
-		'lilydjwg/colorizer'
+		'norcalli/nvim-colorizer.lua'
 	}
 	use{
 		'sheerun/vim-polyglot'
 	}
 	use{
-    'mattn/emmet-vim'
+ 	   'mattn/emmet-vim'
 	}
 	use{
-    'neoclide/coc.nvim', branch = 'release'
+	   'neoclide/coc.nvim', branch = 'release'
+	}
+	use{
+		'karb94/neoscroll.nvim'
+	}
+	use{
+		'b3nj5m1n/kommentary'
+	}
+	use{
+		'akinsho/nvim-toggleterm.lua'
 	}
 end)
