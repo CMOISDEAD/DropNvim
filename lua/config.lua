@@ -5,7 +5,7 @@ local cmd = vim.api.nvim_exec
 require('lualine').setup{
   options = {
     icons_enabled = true,
-    theme = 'nord',
+    theme = 'ayu_light',
     component_separators = {'|', '|'},
     section_separators = {'', ''},
     disabled_filetypes = {}

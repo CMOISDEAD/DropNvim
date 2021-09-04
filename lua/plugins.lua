@@ -20,7 +20,7 @@ return require('packer').startup(function()
 		'morhetz/gruvbox'
 	}
 	use{
-		'arcticicestudio/nord-vim'
+		'ayu-theme/ayu-vim'
 	}
 	use {
 		'sainnhe/everforest'
