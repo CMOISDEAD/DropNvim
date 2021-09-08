@@ -4,6 +4,9 @@ return require('packer').startup(function()
 	use {
 		'wbthomason/packer.nvim'
 	}
+	use{
+		'xuhdev/vim-latex-live-preview'
+	}
 	use {
   		'hoob3rt/lualine.nvim',
   		requires = {'kyazdani42/nvim-web-devicons', opt = true}
@@ -23,7 +26,7 @@ return require('packer').startup(function()
 		'ayu-theme/ayu-vim'
 	}
 	use {
-		'sainnhe/everforest'
+		'cocopon/iceberg.vim'
 	}
 	use {
 		'lukas-reineke/indent-blankline.nvim'

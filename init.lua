@@ -25,12 +25,13 @@ local g = vim.api.nvim_set_var
 
 
 vim.cmd[[
- colorscheme ayu
- let ayucolor="light"
+ colorscheme iceberg 
+ set background=dark
  set termguicolors
  set ts=4
  set sw=4
  set expandtab
+ let g:livepreview_previewer = 'evince'
 
  command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
