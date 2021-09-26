@@ -4,12 +4,18 @@ return require('packer').startup(function()
 	use {
 		'wbthomason/packer.nvim'
 	}
-	use{
-		'xuhdev/vim-latex-live-preview'
-	}
 	use {
   		'hoob3rt/lualine.nvim',
   		requires = {'kyazdani42/nvim-web-devicons', opt = true}
+	}
+	use{
+		'CMOISDEAD/atlas.vim'
+	}
+	use{
+		'SirVer/ultisnips'
+	}
+	use{
+		'tpope/vim-surround'
 	}
 	use {
 		'akinsho/nvim-bufferline.lua',
@@ -17,16 +23,10 @@ return require('packer').startup(function()
 	}
 	use {
 	   	'kyazdani42/nvim-tree.lua',
-	    	requires = 'kyazdani42/nvim-web-devicons'
+	    requires = 'kyazdani42/nvim-web-devicons'
 	}
 	use {
 		'morhetz/gruvbox'
-	}
-	use{
-		'ayu-theme/ayu-vim'
-	}
-	use {
-		'cocopon/iceberg.vim'
 	}
 	use {
 		'lukas-reineke/indent-blankline.nvim'
@@ -64,9 +64,6 @@ return require('packer').startup(function()
 	}
 	use{
 	   'neoclide/coc.nvim', branch = 'release'
-	}
-	use{
-		'karb94/neoscroll.nvim'
 	}
 	use{
 		'b3nj5m1n/kommentary'

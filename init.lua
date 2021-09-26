@@ -9,29 +9,29 @@ local bo = vim.bo
 local wo = vim.wo
 
 o.ruler = true
-o.number = true
+-- o.number = true
 o.showcmd = true
 o.shiftwidth = 1
 o.splitright = true
 o.splitbelow = true
-o.relativenumber = true
+-- o.relativenumber = true
+o.rnu = true
 o.clipboard = "unnamedplus"
 bo.smartindent = true
 wo.cursorline = true
 wo.wrap = false
+vim.opt.termguicolors = true
 
 --Variables
 local g = vim.api.nvim_set_var
 
-
 vim.cmd[[
- colorscheme iceberg 
- set background=dark
- set termguicolors
- set ts=4
- set sw=4
- set expandtab
- let g:livepreview_previewer = 'evince'
+  colorscheme atlas
+  set background=dark
+  set ts=2
+  set sw=2
+  set expandtab
+  let g:gruvbox_contrast_dark='hard'
 
  command! -nargs=0 Prettier :CocCommand prettier.formatFile
 

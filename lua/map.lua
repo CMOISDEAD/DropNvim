@@ -61,6 +61,9 @@ map('n', '<leader>sl', ':<C-u>SessionLoad<CR>', { noremap = true, silent = true}
 map('n', '<leader>cf', '<Plug>(coc-format-selected)', { noremap = true, silent = true })
 map('v', '<leader>cf', '<Plug>(coc-format-selected)', { noremap = true, silent = true })
 
+--===ZenMode===
+map('n', '<leader>mz', ':Limelight<CR>', { noremap = true, silent = true })
+
 --===Comments===
 --[[ map("n", "<leader>cic", "<Plug>kommentary_line_increase", { noremap = true, silent = true })
 map("n", "<leader>ci", "<Plug>kommentary_motion_increase", { noremap = true, silent = true })
