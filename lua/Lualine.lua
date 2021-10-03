@@ -6,10 +6,7 @@ local colors = {
 require'lualine'.setup{
   options = {
     icons_enabled = false,
-    theme = {
-      normal = {c = {fg = colors.fg, bg = colors.bg}},
-      inactive = {c = {fg = colors.fg, bg = colors.bg}}
-    },
+    theme = 'nightfly', 
     component_separators = {' ', ' '},
     section_separators = {' ', ' '},
     disabled_filetypes = {}

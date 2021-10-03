@@ -3,12 +3,13 @@ local g = vim.api.nvim_set_var
 g('nvim_tree_side', 'right')
 g('nvim_tree_width', 40)
 g('nvim_tree_auto_open', 1)
-g('nvim_tree_auto_close', 1)
 g('nvim_tree_quit_on_open', 1)
 g('nvim_tree_highlight_opened_files',1)
 g('nvim_tree_disable_default_keybindings', 1)
 g('nvim_tree_auto_ignore_ft', {'startify', 'dashboard'})
 g('nvim_tree_ignore', { '.git', 'node_modules', '.cache' })
+
+require'nvim-tree'.setup {}
 
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 vim.g.nvim_tree_bindings = {
@@ -45,3 +46,4 @@ vim.g.nvim_tree_bindings = {
       { key = "q",                            cb = tree_cb("close") },
       { key = "g?",                           cb = tree_cb("toggle_help") },
 }
+

@@ -11,9 +11,7 @@ return require('packer').startup(function()
 	use{
 		'CMOISDEAD/atlas.vim'
 	}
-	use{
-		'SirVer/ultisnips'
-	}
+	use 'bluz71/vim-nightfly-guicolors'
 	use{
 		'tpope/vim-surround'
 	}
@@ -22,7 +20,7 @@ return require('packer').startup(function()
 		requires = 'kyazdani42/nvim-web-devicons'
 	}
 	use {
-	   	'kyazdani42/nvim-tree.lua',
+			'kyazdani42/nvim-tree.lua',
 	    requires = 'kyazdani42/nvim-web-devicons'
 	}
 	use {

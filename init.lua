@@ -26,7 +26,7 @@ vim.opt.termguicolors = true
 local g = vim.api.nvim_set_var
 
 vim.cmd[[
-  colorscheme atlas
+  colorscheme nightfly 
   set background=dark
   set ts=2
   set sw=2

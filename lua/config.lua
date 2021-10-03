@@ -19,7 +19,7 @@ g('dashboard_default_executive', 'telescope')
 g('user_emmet_leader_key', '<C-Z>')
 
 --===CoC===
-require('coc')
+-- require('coc')
 
 --===Colorizer===
 -- require'colorizer'.setup()
