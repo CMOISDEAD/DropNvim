@@ -1,19 +1,17 @@
-local colors = {
-  bg = '#212121',
-  fg = '#c0c0c0'
-}
+local custom_gruvbox = require'lualine.themes.gruvbox'
 
-require'lualine'.setup{
+require'lualine'.setup {
   options = {
-    icons_enabled = false,
-    theme = 'nightfly', 
-    component_separators = {' ', ' '},
-    section_separators = {' ', ' '},
-    disabled_filetypes = {}
+    icons_enabled = true,
+    theme = 'gruvbox',
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
+    disabled_filetypes = {},
+    always_divide_middle = true,
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'branch'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},

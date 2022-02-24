@@ -1,4 +1,6 @@
-# Neovim Linux - (My Neovim config for linux)
+# DropNvim (Neovim) - (My Neovim config for linux)
+
+![XMO](./doc/Preview.png)
 
 A neovim configuration oriented to web development, inspired by doom emacs and spacevim
 

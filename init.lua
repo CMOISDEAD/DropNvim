@@ -1,7 +1,7 @@
 --Requires
-require('plugins')
-require('map')
-require('config')
+require('plugins/init')
+require('plugins/plugins')
+require('keymaps')
 
 --Config
 local o = vim.o
@@ -10,12 +10,12 @@ local wo = vim.wo
 
 o.ruler = true
 -- o.number = true
+-- o.relativenumber = true
+o.rnu = true
 o.showcmd = true
 o.shiftwidth = 1
 o.splitright = true
 o.splitbelow = true
--- o.relativenumber = true
-o.rnu = true
 o.clipboard = "unnamedplus"
 bo.smartindent = true
 wo.cursorline = true
@@ -25,35 +25,12 @@ vim.opt.termguicolors = true
 --Variables
 local g = vim.api.nvim_set_var
 
+-- Remove
 vim.cmd[[
-  colorscheme nightfly 
+  colorscheme gruvbox 
   set background=dark
   set ts=2
   set sw=2
   set expandtab
   let g:gruvbox_contrast_dark='hard'
-
- command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-let g:dashboard_custom_header =<< trim END
-=================     ===============     ===============   ========  ========
-\\ . . . . . . .\\   //. . . . . . .\\   //. . . . . . .\\  \\. . .\\// . . //
-||. . ._____. . .|| ||. . ._____. . .|| ||. . ._____. . .|| || . . .\/ . . .||
-|| . .||   ||. . || || . .||   ||. . || || . .||   ||. . || ||. . . . . . . ||
-||. . ||   || . .|| ||. . ||   || . .|| ||. . ||   || . .|| || . | . . . . .||
-|| . .||   ||. _-|| ||-_ .||   ||. . || || . .||   ||. _-|| ||-_.|\ . . . . ||
-||. . ||   ||-'  || ||  `-||   || . .|| ||. . ||   ||-'  || ||  `|\_ . .|. .||
-|| . _||   ||    || ||    ||   ||_ . || || . _||   ||    || ||   |\ `-_/| . ||
-||_-' ||  .|/    || ||    \|.  || `-_|| ||_-' ||  .|/    || ||   | \  / |-_.||
-||    ||_-'      || ||      `-_||    || ||    ||_-'      || ||   | \  / |  `||
-||    `'         || ||         `'    || ||    `'         || ||   | \  / |   ||
-||            .===' `===.         .==='.`===.         .===' /==. |  \/  |   ||
-||         .=='   \_|-_ `===. .==='   _|_   `===. .===' _-|/   `==  \/  |   ||
-||      .=='    _-'    `-_  `='    _-'   `-_    `='  _-'   `-_  /|  \/  |   ||
-||   .=='    _-'          '-__\._-'         '-_./__-'         `' |. /|  |   ||
-||.=='    _-'                                                     `' |  /==.||
-=='    _-'                        O K L A M A                         \/   `==
-\   _-'                                                                `-_   /
- `''                                                                      ``'
-END
 ]]
