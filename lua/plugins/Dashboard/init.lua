@@ -21,7 +21,7 @@ vim.g.dashboard_custom_section = {
   b = {description = {'  Recent Files       '}, command = 'Telescope oldfiles'},
   e = {
     description = {'  Config             '},
-    command = 'edit ~/.config/nvim/lua/vapour/user-config/init.lua'
+    command = 'edit ~/.config/nvim/init.lua'
   },
   f = {description = {'  Git                '}, command = 'LazyGit'}
 }

@@ -50,6 +50,8 @@ map('n', '<leader>gc', ':Telescope git_commit<CR>', opts)
 -- Search
 map('n', '<leader>sc', ':Telescope colorscheme<CR>', opts)
 map('n', '<leader>sm', ':Telescope marks<CR>', opts)
+map('n', '<leader>sC', ':Telescope commands_history<CR>', opts)
+map('n', '<leader>sf', ':Telescope oldfiles<CR>', opts)
 
 -- Terminal
 map('t', 'jk', '<Esc>', opts)
