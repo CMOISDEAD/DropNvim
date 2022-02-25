@@ -1,6 +1,6 @@
 --Requires
 require('plugins/init')
-require('plugins/plugins')
+require('plugins')
 require('keymaps')
 
 --Config
@@ -10,8 +10,8 @@ local wo = vim.wo
 
 o.ruler = true
 -- o.number = true
--- o.relativenumber = true
-o.rnu = true
+o.relativenumber = true
+-- o.rnu = true
 o.showcmd = true
 o.shiftwidth = 1
 o.splitright = true
@@ -33,4 +33,5 @@ vim.cmd[[
   set sw=2
   set expandtab
   let g:gruvbox_contrast_dark='hard'
+  set timeoutlen=300
 ]]

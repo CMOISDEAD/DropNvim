@@ -45,7 +45,7 @@ map('n', '<A-0>', ':BufferLast<CR>', opts)
 
 -- Git
 map('n', '<leader>gs', ':Telescope git_status<CR>', opts)
-map('n', '<leader>gc', ':Telescope git_commit<CR>', opts)
+map('n', '<leader>gc', ':Telescope git_commits<CR>', opts)
 
 -- Search
 map('n', '<leader>sc', ':Telescope colorscheme<CR>', opts)
